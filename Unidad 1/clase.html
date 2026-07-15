@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera Web</title>
-</head>
-<body>
-    <h1>Pokedex</h1>
-    <h2>Enciclopedia Pokemon</h2>
-    <p>En este sitio encontrarás toda la información sobre el mundo Pokemon.</p>
+    <link rel="stylesheet" href="estilos.css"> <!-- linkeo el archivo css externo -->
 
-       
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <!-- creo un apartado para configurar los estilos, acá puedo escribir código CSS --> 
+     <!-- acá estoy diciendo que todos los parrafos van a tener los estilos declarados acá -->
+    <style>        
+        
+    </style>
+    <!-- al parrafo 3 accedo por id-->
+
+</head>
+
+<body style="color: green">        <!--estilo en cascada, afecta a todo lo que está en el body, salvo lo que ya tiene propiedades-->
+    <h1 style="color: red; font-size: 75px;">Pokedex</h1>   <!-- estilo inline -->
+    <h2>Enciclopedia Pokemon</h2>
+    <p style="color: blue;">En este sitio encontrarás toda la información sobre el mundo Pokemon.</p>
+    <p>Puedes agregar la información que desees sobre cada Pokemon.</p>
+    <p id="parrafo3">OTRO PARRAFO</p> <!-- los elementos pueden tener un id para modificarlos en la sección "style" -->
+
 
     <table>     <!-- tengo que configurar las filas y columnas de la tabla -->
          <tr>
@@ -30,11 +36,11 @@
          </tr>
     </table>
 
-    <div>
+    <div class="colorPrincipal">
         <label for="">User</label>
         <input type="text">
     </div>
-    
+    <!--el div es un contenedor de elemenos-->
     <div>
         <label for="">Pass</label>
         <input type="text">
@@ -43,18 +49,12 @@
     
     <div>
         <button>LogIn</button>
-
+    
     </div>
     
-    <header>    <!-- cabecera página web -->
-        <!-- acá se puede armar todo el menú... -->
-    </header>
-
-    
-    
-    
-    <span></span>
-
+    <div id="cuadrado">
+        HOLA
+    </div>
 
 </body>
 </html>
