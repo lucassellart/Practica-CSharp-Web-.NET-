@@ -10,6 +10,20 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Página vacía...</h1>
+            <h2>Vamos de a poco pipi</h2>
+            <h3>Se vienen cositas... de las buenas eh...</h3>
+           
+            <div>
+                 <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" />
+            </div>
+            <div>
+                <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+            </div>
+            
         </div>
     </form>
 </body>
