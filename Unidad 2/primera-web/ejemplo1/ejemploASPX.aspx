@@ -23,6 +23,9 @@
             <div>
                 <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
             </div>
+            <div>
+                <a href="About">No hagas click acá</a>
+            </div>
             
         </div>
     </form>

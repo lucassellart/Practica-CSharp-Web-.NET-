@@ -5,5 +5,7 @@
         <h2 id="title"><%: Title %>.</h2>   
         <h3>Esta es mi nueva APP WEB</h3>
         <p>Use this area to provide additional information.</p>
+
+        <a href="ejemploASPX">Volvé pipi,dale...</a>
     </main>
 </asp:Content>
