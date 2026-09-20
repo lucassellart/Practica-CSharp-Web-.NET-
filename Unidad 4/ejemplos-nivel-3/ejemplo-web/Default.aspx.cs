@@ -14,8 +14,13 @@ namespace ejemplo_web
         {
             // acá voy a cargar la grilla de datos 
 
-            AutoNegocio negocio = new AutoNegocio();
-            dgvAutos.DataSource = negocio.listar();
+            if(Session["listaAutos"] == null) {
+
+                AutoNegocio negocio = new AutoNegocio();
+                Session.Add("listaAutos", negocio.listar());
+            }    
+                    
+            dgvAutos.DataSource = Session["listaAutos"];
             dgvAutos.DataBind();    // arma la tabla que se va a ver en pantalla
 
 
