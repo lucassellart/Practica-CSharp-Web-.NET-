@@ -25,5 +25,13 @@ namespace ejemplo_web
 
 
         }
+
+        protected void dgvAutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //var algo = dgvAutos.SelectedRow.Cells[0]; //accedo a la primer celda de la fila seleccionada
+            var id = dgvAutos.SelectedDataKey.Value.ToString();
+
+            Response.Redirect("AutoFormulario.aspx?id=" + id);
+        }
     }
 }

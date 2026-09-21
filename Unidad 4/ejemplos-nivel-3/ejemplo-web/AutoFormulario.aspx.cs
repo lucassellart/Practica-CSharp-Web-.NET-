@@ -15,6 +15,19 @@ namespace ejemplo_web
             ddlColores.Items.Add("Negro");
             ddlColores.Items.Add("Blanco");
             ddlColores.Items.Add("Azul");
+
+            // cargamos los primeros dos valores (id y modelo)
+
+            if (Request.QueryString["id"]!=null)
+            {
+                int id = int.Parse(Request.QueryString["id"].ToString());
+                List<Auto> temporal = (List<Auto>)Session["listaAutos"];
+
+                Auto seleccionado = temporal.Find(x => x.Id == id);
+                txtModelo.Text = seleccionado.Modelo;
+                txtId.Text = seleccionado.Id.ToString();
+                txtId.ReadOnly = true;  // lo pongo en true para que no se pueda modificar
+            }
         }
 
         protected void btnAcpetar_Click(object sender, EventArgs e)
